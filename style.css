@@ -112,26 +112,64 @@ gap: 5px;
     font-size: 16px;
 }
 
+.section_proyects {
+    margin: 50px 20px 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.card_fylo {
+    border: #9A879D solid 2px;
+    padding: 30px 10px;
 
-
-
-
-
-
+}
 
 .card_fylo_image {
-    width: 400px;
+    width: 300px;
+margin-top: 40px;
+box-shadow: 2px 0.5px 15px #9A879D;
+}
+
+.card_techblog {
+    border: #9A879D solid 2px;
+    padding: 30px 10px;
 
 }
 
 .card_techblog_image {
-    width: 400px;
+    width: 300px;
+    margin-top: 40px;
+box-shadow: 2px 0.5px 15px #9A879D;
+
+}
+
+.card_welldoing {
+    border: #9A879D solid 2px;
+    padding: 30px 10px;
 
 }
 
 .card_welldoing_image {
-    width: 400px;
+    width: 300px;
+    margin-top: 40px;
+box-shadow: 2px 0.5px 15px #9A879D;
 }
+
+.card_title {
+font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.card_description {
+font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+
+
 
 .section_footer {
     background-color: #000;
