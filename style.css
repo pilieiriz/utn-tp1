@@ -1,6 +1,8 @@
 * {
 margin: 0;
-padding: 0}
+padding: 0;
+box-sizing: border-box;
+}
 
 .section_header {
 background-color: #000;
@@ -15,7 +17,7 @@ padding: 20px 20px 200px 20px;
 .nav_list {
     display: flex;
    justify-content: space-between;
-   gap: 30px;
+   gap: 20px;
    list-style: none;
 }
 
@@ -23,7 +25,7 @@ padding: 20px 20px 200px 20px;
     color: #ffffff;
     text-decoration: none;
 font-family: "Roboto", sans-serif;
-font-size: 16px;
+font-size: 13px;
 font-weight: bold;
 
 }
@@ -34,8 +36,23 @@ font-weight: bold;
 .section_home {
 background-color: #000;
 color: #ffffff;
-
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding-bottom: 200px;
 }
+
+.home_title {
+    font-size: 90px;
+    font-family: "League Gothic", sans-serif;
+}
+
+.home_subtitle {
+    font-size: 32px;
+}
+
+
 
 
 .card_fylo_image{
