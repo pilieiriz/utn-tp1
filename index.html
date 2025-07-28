@@ -16,7 +16,7 @@
                 <img src="./assets/logos/linkedin.svg" alt="linkedin">
             </figure>
 
-            <nav>
+            <nav class="nav_header">
                 <ul>
                     <li><a href="#section_home">Home</a></li>
                     <li><a href="#section_about">About</a></li>
@@ -28,84 +28,104 @@
         </section>
     </header>
     <main>
-    <section class="section_home">
-        <h1 class="home_title"> Pilar Eiriz </h1>
-        <p class="home_subtitle"> Software Engineer </p>
-    </section>
-    <section class="section_about">
-        <article class="about_information">
-            <h2 class="about_title">About me</h2>
-            <p class="about_description">"Soy Pilar Eiriz, desarrolladora Full Stack en formación. Actualmente estoy
-                aprendiendo HTML, CSS, Git y
-                Figma, y pronto avanzaré con JavaScript, bases de datos y frameworks como React y Node.js. Me interesa
-                crear
-                experiencias digitales que sean funcionales, claras y atractivas. Además del desarrollo web, también me
-                motiva aprender sobre aplicaciones móviles. Estoy dando mis primeros pasos en el mundo tech con muchas
-                ganas
-                de crecer y aportar valor a cada proyecto."</p>
-        </article>
-        <article class="skills_information">
-            <h2>My Skills</h2>
-            <div>
+        <section class="section_home">
+            <h1 class="home_title"> Pilar Eiriz </h1>
+            <p class="home_subtitle"> Software Engineer </p>
+        </section>
+        <section class="section_about">
+            <article class="about_information">
+                <h2 class="about_title">About me</h2>
+                <p class="about_description">"Soy Pilar Eiriz, desarrolladora Full Stack en formación. Actualmente estoy
+                    aprendiendo HTML, CSS, Git y
+                    Figma, y pronto avanzaré con JavaScript, bases de datos y frameworks como React y Node.js. Me
+                    interesa
+                    crear
+                    experiencias digitales que sean funcionales, claras y atractivas. Además del desarrollo web, también
+                    me
+                    motiva aprender sobre aplicaciones móviles. Estoy dando mis primeros pasos en el mundo tech con
+                    muchas
+                    ganas
+                    de crecer y aportar valor a cada proyecto."</p>
+            </article>
+            <article class="skills_information">
+                <h2>My Skills</h2>
                 <div>
-                    <img src="./assets/logos/HTML5.svg" alt="logo_html">
-                    <p> HTML</p>
-                </div>
-                <div>
-                    <img src="./assets/logos/Css.svg" alt="logo_css">
-                    <p> CSS</p>
-                </div>
-                <div>
-                    <img src="./assets/logos/Javascript.svg" alt="logo_javasctipt">
-                    <p> JavaScript</p>
-                </div>
+                    <div>
+                        <img src="./assets/logos/HTML5.svg" alt="logo_html">
+                        <p> HTML</p>
+                    </div>
+                    <div>
+                        <img src="./assets/logos/Css.svg" alt="logo_css">
+                        <p> CSS</p>
+                    </div>
+                    <div>
+                        <img src="./assets/logos/Javascript.svg" alt="logo_javasctipt">
+                        <p> JavaScript</p>
+                    </div>
 
+                </div>
+                <div>
+                    <div>
+                        <img src="./assets/logos/Figma.svg" alt="logo_figma">
+                        <p> Figma</p>
+                    </div>
+                    <div>
+                        <img src="./assets/logos/Git.svg" alt="logo_git">
+                        <p> Git</p>
+                    </div>
+                    <div>
+                        <img src="./assets/logos/Visual Studio Code.svg" alt="logo_vscode">
+                        <p> VSCode</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section_proyects">
+            <div class="card_fylo">
+                <h2 class="card_fylo_title">
+                    Proyect - Fylo
+                </h2>
+                <p class="card_fylo_description">
+                    Landing page de almacenamiento en nube
+                </p>
+                <img class="card_fylo_image" src="./assets/images/image_fylo.png" alt="">
+            </div>
+            <div class="card_techblog">
+                <h2 class="card_techblog_title"> Proyect - Tech blog</h2>
+                <p class="card_techblog_description"> Articulos sobre AI, Cloud, y 5G</p>
+                <img class="card_techblog_image" src="./assets/images/image_techblog.png" alt="">
+            </div>
+            <div class="card_welldoing">
+                <h2 class="card_welldoing_title">
+                    Proyect - Welldoing
+                </h2>
+                <p class="card_welldoing_description">
+                    Landing page de salud y bienestar
+                </p>
+                <img class="card_welldoing_image" src="./assets/images/image_bienestar.png" alt="">
+            </div>
+        </section>
+        <form action="">
+            <h2>Contact me</h2>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="Your Name">
             </div>
             <div>
-                <div>
-                    <img src="./assets/logos/Figma.svg" alt="logo_figma">
-                    <p> Figma</p>
-                </div>
-                <div>
-                    <img src="./assets/logos/Git.svg" alt="logo_git">
-                    <p> Git</p>
-                </div>
-                <div>
-                    <img src="./assets/logos/Visual Studio Code.svg" alt="logo_vscode">
-                    <p> VSCode</p>
-                </div>
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="email">
             </div>
-        </article>
-    </section>
-
-    <section class="section_proyects">
-        <div class="card_fylo">
-            <h2 class="card_fylo_title">
-                Proyect - Fylo
-            </h2>
-            <p class="card_fylo_description"> 
-                Landing page de almacenamiento en nube
-            </p>
-            <img class="card_fylo_image"   src="./assets/images/image_fylo.png" alt="">
-        </div>
-        <div class="card_techblog">
-            <h2 class="card_techblog_title"> Proyect - Tech blog</h2>
-            <p class="card_techblog_description"> Articulos sobre AI, Cloud, y 5G</p>
-            <img class="card_techblog_image" src="./assets/images/image_techblog.png" alt="">
-        </div>
-        <div class="card_welldoing">
-            <h2 class="card_welldoing_title">
-                Proyect - Welldoing
-            </h2>
-            <p class="card_welldoing_description">
-                Landing page de salud y bienestar
-            </p>
-            <img class="card_welldoing_image" src="./assets/images/image_bienestar.png" alt="">
-        </div>
-
-    </section>
-
-</main>
+            <div>
+                <label for="text">Nachricht</label>
+                <input type="text" name="text" placeholder="Hello, my name is...">
+            </div>
+            <button type="submit">
+                Send message
+            </button>
+        </form>
+    </main>
+    
 </body>
 
 </html>
