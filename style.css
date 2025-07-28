@@ -1,32 +1,32 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .section_header {
-background-color: #000;
-color: #ffffff;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 20px 20px 200px 20px;
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 200px 20px;
 
 }
 
 .nav_list {
     display: flex;
-   justify-content: space-between;
-   gap: 20px;
-   list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+    list-style: none;
 }
 
 .nav_link {
     color: #ffffff;
     text-decoration: none;
-font-family: "Roboto", sans-serif;
-font-size: 13px;
-font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    font-weight: bold;
 
 }
 
@@ -34,42 +34,106 @@ font-weight: bold;
 
 
 .section_home {
-background-color: #000;
-color: #ffffff;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-padding-bottom: 200px;
+    background-color: #000;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 200px;
+    gap: 10px;
 }
 
 .home_title {
     font-size: 90px;
     font-family: "League Gothic", sans-serif;
+    text-align: center;
 }
 
 .home_subtitle {
     font-size: 32px;
+    font-family: "League Spartan", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    text-align: center;
+}
+
+.section_about {
+    padding: 60px 40px 60px 40px;
+}
+
+.about_title {
+    font-family: "League Spartan", sans-serif;
+    font-size: 24px;
+    margin-bottom: 18px;
+}
+
+.about_description {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+
+}
+
+.skills_title {
+    margin: 70px 0px 20px 0px;
+    font-family: "League Spartan", sans-serif;
+    font-size: 24px;
+
+}
+.skills {
+    display: flex;
+gap: 90px;
+}
+
+.skills_list_first {
+display: flex;
+flex-direction: column;
+gap: 10px;
+
+}
+.item_skills_first {
+    display: flex;
+    gap: 5px;
+}
+
+.skills_list_second {
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+
+.item_skills_second {
+display: flex;
+gap: 5px;
+}
+
+.descriptcion_skill {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
 }
 
 
 
 
-.card_fylo_image{
-width: 400px;
+
+
+
+
+.card_fylo_image {
+    width: 400px;
 
 }
 
-.card_techblog_image{
-width: 400px;
+.card_techblog_image {
+    width: 400px;
 
 }
 
 .card_welldoing_image {
-width: 400px;
+    width: 400px;
 }
 
 .section_footer {
     background-color: #000;
-color: #ffffff;
+    color: #ffffff;
 }
