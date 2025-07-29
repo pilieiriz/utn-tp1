@@ -80,31 +80,33 @@
     font-size: 24px;
 
 }
+
 .skills {
     display: flex;
-gap: 90px;
+    gap: 90px;
 }
 
 .skills_list_first {
-display: flex;
-flex-direction: column;
-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 
 }
+
 .item_skills_first {
     display: flex;
     gap: 5px;
 }
 
 .skills_list_second {
-display: flex;
-flex-direction: column;
-gap: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .item_skills_second {
-display: flex;
-gap: 5px;
+    display: flex;
+    gap: 5px;
 }
 
 .descriptcion_skill {
@@ -119,54 +121,31 @@ gap: 5px;
     align-items: center;
     gap: 30px;
 }
-.card_fylo {
-    border: #9A879D solid 2px;
+
+.card_proyect {
     padding: 30px 10px;
 
 }
-
-.card_fylo_image {
-    width: 300px;
-margin-top: 40px;
-box-shadow: 2px 0.5px 15px #9A879D;
-}
-
-.card_techblog {
-    border: #9A879D solid 2px;
-    padding: 30px 10px;
-
-}
-
-.card_techblog_image {
+.card_image {
     width: 300px;
     margin-top: 40px;
-box-shadow: 2px 0.5px 15px #9A879D;
+    box-shadow: 2px 0.5px 15px #9A879D;
 
-}
-
-.card_welldoing {
-    border: #9A879D solid 2px;
-    padding: 30px 10px;
-
-}
-
-.card_welldoing_image {
-    width: 300px;
-    margin-top: 40px;
-box-shadow: 2px 0.5px 15px #9A879D;
 }
 
 .card_title {
-font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
     font-weight: bold;
 }
 
 
 .card_description {
-font-family: "Roboto", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 16px;
 }
+
+
 
 
 
