@@ -145,12 +145,107 @@
     font-size: 16px;
 }
 
+.form_contacto {
+    margin: 0px 30px 40px 30px;
+}
+
+
+.title_contacto {
+margin-bottom: 20px;
+font-family: "League Spartan", sans-serif;
+    font-size: 24px;
+}
+
+.div_general_inputs_contacto {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.div_individual_inputs_contacto {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    gap: 20px;
+}
+
+.input {
+    border: none;
+    border-bottom: 1px solid #000;
+    width: 300px;
+    margin-top: 10px;
+
+}
+
+.label_input {
+font-family: "League Spartan", sans-serif;
+    font-size: 16px;
+
+}
+
+input::placeholder {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
 
 
 
+
+.btn_contact {
+    margin-top: 50px;
+    border: none;
+    padding: 16px 60px;
+    background-color: #D9D9D9;
+}
+
+.div_btn {
+display: flex;
+justify-content: center;
+
+}
 
 
 .section_footer {
     background-color: #000;
     color: #ffffff;
+    
 }
+
+.section_footer {
+    padding: 60px 20px 40px 20px;
+
+}
+
+.nav_list_footer {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav_link_footer {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.section_contacto_footer {
+    margin: 40px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.info_contact {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+}
+
+.links_profile_footer {
+    text-align: center;
+}
+
