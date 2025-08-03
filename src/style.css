@@ -1,12 +1,41 @@
+:root {
+  --primary: #ffffff;
+  --secondary: #ECEDEE;
+}
+
+
 * {
 margin: 0;
-padding: 0}
+padding: 0;
+box-sizing: border-box;
+}
 
 
 body {
 display: grid;
-grid-template-columns: 1fr 4fr;
+grid-template-columns: 0.7fr 4fr;
 column-gap: 10px;
+}
 
+.chat-list_container {
+padding: 20px 30px;
+border-right: var(--secondary) solid 3px ;
+display: flex;
+flex-direction: column;
+gap: 20px;
 
+}
+
+.chat-list_search {
+    padding: 10px 80px 10px 10px;
+    border-radius: 5px;
+    border: var(--secondary) solid 3px;
+    width: 100%;
+    font-size: 14px;
+    color: var(--secondary);
+    
+}
+
+.chat-list_img {
+    width: 50px;
 }
