@@ -1,39 +1,48 @@
 :root {
-  --primary: #ffffff;
-  --secondary: #ECEDEE;
+    --primary: #ffffff;
+    --secondary: #c7cbd0;
+    --tertiary: #000000;
 }
 
 
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
-display: grid;
-grid-template-columns: 0.7fr 4fr;
-column-gap: 10px;
+    display: grid;
+    grid-template-columns: 0.7fr 4fr;
+    column-gap: 10px;
+    width: 100vw;
+    height: 100vh;
 }
 
 .chat-list_container {
-padding: 20px 30px;
-border-right: var(--secondary) solid 3px ;
-display: flex;
-flex-direction: column;
-gap: 20px;
+    padding: 20px 10px;
+    border-right: var(--secondary) solid 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 
 }
 
 .chat-list_search {
     padding: 10px 80px 10px 10px;
     border-radius: 5px;
-    border: var(--secondary) solid 3px;
+    border: var(--secondary) solid 1px;
     width: 100%;
     font-size: 14px;
+    color: var(--tertiary);
+}
+.chat-list_search::placeholder {
     color: var(--secondary);
-    
+}
+.chat-list_search:focus {
+  border: 1px solid var(--tertiary);
+  outline: none;
 }
 
 .chat-list_img {
