@@ -2,6 +2,9 @@
     --primary: #ffffff;
     --secondary: #a7adb4;
     --tertiary: #000000;
+    --lightBlue: #ECF6FC;
+    --red:#DF2131;
+    --green: #008000;
 }
 
 
@@ -9,6 +12,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
 }
 
 
@@ -93,7 +97,7 @@ align-items: start;
   display: inline-block;
   width: 6px;
   height: 6px;
-  background-color: red;
+  background-color: var(--red);
   border-radius: 50%;
   margin-right: 6px;
   vertical-align: middle;
@@ -104,7 +108,7 @@ align-items: start;
   display: inline-block;
   width: 6px;
   height: 6px;
-  background-color: green;
+  background-color: var(--green);
   border-radius: 50%;
   margin-right: 6px;
   vertical-align: middle;
@@ -160,7 +164,7 @@ padding: 14px;
 }
 
 .fa-question {
-    color: red;
+    color: var(--red);
     font-size: 20px;
 }
 
@@ -170,4 +174,37 @@ font-size: 20px;
 
 .fa-camera {
     font-size: 20px;
+}
+
+
+.chat_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: var(--secondary) solid 1px;
+    padding: 10px 10px 550px 10px;
+}
+
+
+.chat_content_message_outcomming {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--lightBlue);
+    width: 40%;
+    border-radius: 10px;
+    align-self: flex-end;
+    padding: 10px;
+    gap:4px;
+
+}
+
+.chat_content_message {
+    font-size: 18px ;
+    font-weight: 600;
+}
+
+.chat_content_message_status {
+font-size: 14px;
+color: var(--secondary);
+font-weight: 400;
 }
