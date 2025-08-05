@@ -5,6 +5,7 @@
     --lightBlue: #ECF6FC;
     --red:#DF2131;
     --green: #008000;
+    --lightGray: #f6f8f9;
 }
 
 
@@ -19,7 +20,6 @@
 body {
     display: grid;
     grid-template-columns: 0.7fr 4fr;
-    column-gap: 10px;
     width: 100vw;
     height: 100vh;
 }
@@ -53,18 +53,27 @@ body {
 .chat-list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    
     justify-content: flex-start;
-    padding: 10px 20px ;
+    padding: 10px 0px ;
 }
 
 .chat-list_content {
     display: flex;
+    padding: 10px;
     gap: 10px;
+    
 }
 
 .chat-list_item {
     list-style-type: none;
+}
+
+.chat-list_content:hover {
+    background-color: var(--lightGray);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
 }
 
 .chat-list_content {
@@ -115,7 +124,7 @@ align-items: start;
 }
 
 .chat-list_img {
-    width: 50px;
+    width: 40px;
 }
 
 
@@ -156,15 +165,14 @@ padding: 14px;
 
 .chat_header_icons_item {
     list-style-type: none;
+    cursor: pointer;
 }
 
 .fa-gear {
-    color: var(--secondary);
     font-size: 20px;
 }
 
 .fa-question {
-    color: var(--red);
     font-size: 20px;
 }
 
@@ -207,4 +215,20 @@ font-size: 20px;
 font-size: 14px;
 color: var(--secondary);
 font-weight: 400;
+}
+
+.chat_content_message_incomming {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.chat_content_message_incoming_container {
+display: flex;
+    flex-direction: column;
+    background-color: var(--lightGray);
+    width: 40%;
+    border-radius: 10px;
+    padding: 10px;
+    gap:4px;
 }
