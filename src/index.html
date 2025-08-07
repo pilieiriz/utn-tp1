@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/724a700924.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Chat UI</title>
 </head>
 
@@ -78,19 +79,23 @@
     <main class="chat_container">
         <section class="chat_header">
             <article class="chat_header_user">
+                <button class="chat_header_user_arrow"><i class="fa-solid fa-arrow-left"></i></button>
                 <img src="../assets/images/avatar.jpeg" alt="imagen de perfil chat principal"
                     class="chat_header_user_image">
-                <div class="chat_header_user_text">
-                    <h2 class="chat_header_user_name">Aiden Chavez</h2>
-                    <p class="chat_header_user_status">Last seen: 2 hours ago</p>
+                <div class="chat_header_user_content">
+                    <div class="chat_header_user_text">
+                        <h2 class="chat_header_user_name">Aiden Chavez</h2>
+                        <p class="chat_header_user_status">Last seen: 2 hours ago</p>
+                    </div>
+                    <ul class="chat_header_icons_list">
+                        <li class="chat_header_icons_item"><i class="fa-solid fa-camera "></i></li>
+                        <li class="chat_header_icons_item"><i class="fa-solid fa-images "></i></li>
+                        <li class="chat_header_icons_item"> <i class="fa-solid fa-gear "></i></li>
+                        <li class="chat_header_icons_item"> <i class="fa-solid fa-question"></i></li>
+                    </ul>
                 </div>
             </article>
-            <ul class="chat_header_icons_list">
-                <li class="chat_header_icons_item"><i class="fa-solid fa-camera icon"></i></li>
-                <li class="chat_header_icons_item"><i class="fa-solid fa-images icon"></i></li>
-                <li class="chat_header_icons_item"> <i class="fa-solid fa-gear icon"></i></li>
-                <li class="chat_header_icons_item"> <i class="fa-solid fa-question icon"></i></li>
-            </ul>
+
         </section>
         <section class="chat_content">
             <article class="chat_content_message_outcomming">
