@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Chat UI</title>
 </head>
 
@@ -20,73 +20,72 @@
             <ul class="chat-list">
                 <li class="chat-list_item">
                     <div class="chat-list_content">
-                        <img src="../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
-                        <div class="chat-list_text">
+                        <img src="../../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
+                        <hgroup class="chat-list_text">
                             <h2 class="chat-list_name">Vincent Porter</h2>
                             <p class="chat-list_status offline">left 7 mins ago</p>
-                        </div>
+                        </hgroup>
                     </div>
                 </li>
                 <li class="chat-list_item">
-                    <div class="chat-list_content">
-                        <img src="../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
-                        <div class="chat-list_text">
-                            <h2 class="chat-list_name">Aiden Chavez</h2>
+                    <div class="chat-list_selected">
+                        <img src="../../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
+                        <hgroup="chat-list_text">
+                            <h2 class="chat-list_name ">Aiden Chavez</h2>
                             <p class="chat-list_status online">online</p>
-                        </div>
+                            </hgroup=>
                     </div>
                 </li>
                 <li class="chat-list_item">
                     <div class="chat-list_content">
-                        <img src="../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
-                        <div class="chat-list_text">
+                        <img src="../../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
+                        <hgroup class="chat-list_text">
                             <h2 class="chat-list_name">Mike Thomas</h2>
                             <p class="chat-list_status online">online</p>
-                        </div>
+                        </hgroup>
                     </div>
                 </li>
                 <li class="chat-list_item">
                     <div class="chat-list_content">
-                        <img src="../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
-                        <div class="chat-list_text">
+                        <img src="../../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
+                        <hgroup class="chat-list_text">
                             <h2 class="chat-list_name">Christian Kelly</h2>
                             <p class="chat-list_status offline">left 10 mins ago</p>
-                        </div>
+                        </hgroup>
                     </div>
                 </li>
                 <li class="chat-list_item">
                     <div class="chat-list_content">
-                        <img src="../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
-                        <div class="chat-list_text">
+                        <img src="../../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
+                        <hgroup class="chat-list_text">
                             <h2 class="chat-list_name">Monica Ward</h2>
                             <p class="chat-list_status online">online</p>
-                        </div>
+                        </hgroup>
                     </div>
                 </li>
                 <li class="chat-list_item">
                     <div class="chat-list_content">
-                        <img src="../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
-                        <div class="chat-list_text">
+                        <img src="../../assets/images/avatar.jpeg" alt="imagen de perfil" class="chat-list_img">
+                        <hgroup class="chat-list_text">
                             <h2 class="chat-list_name">Dean Henry</h2>
                             <p class="chat-list_status offline">offline since Oct 28</p>
-                        </div>
+                        </hgroup>
                     </div>
                 </li>
             </ul>
         </article>
     </aside>
-
     <main class="chat_container">
         <section class="chat_header">
             <article class="chat_header_user">
                 <button class="chat_header_user_arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                <img src="../assets/images/avatar.jpeg" alt="imagen de perfil chat principal"
+                <img src="../../assets/images/avatar.jpeg" alt="imagen de perfil chat principal"
                     class="chat_header_user_image">
                 <div class="chat_header_user_content">
-                    <div class="chat_header_user_text">
+                    <hgroup class="chat_header_user_text">
                         <h2 class="chat_header_user_name">Aiden Chavez</h2>
-                        <p class="chat_header_user_status">Last seen: 2 hours ago</p>
-                    </div>
+                        <p class="chat_header_user_status"> writing...</p>
+                    </hgroup>
                     <ul class="chat_header_icons_list">
                         <li class="chat_header_icons_item"><i class="fa-solid fa-camera "></i></li>
                         <li class="chat_header_icons_item"><i class="fa-solid fa-images "></i></li>
@@ -95,7 +94,6 @@
                     </ul>
                 </div>
             </article>
-
         </section>
         <section class="chat_content">
             <article class="chat_content_message_outcomming">
@@ -107,31 +105,26 @@
                 </p>
             </article>
             <article class="chat_content_message_incomming">
-                <div class="chat_content_message_incoming_container">
+                <hgroup class="chat_content_message_incoming_container">
                     <p class="chat_content_message">
                         Are we meeting today?
                     </p>
                     <p class="chat_content_message_status">10:12 AM, Today</p>
-                </div>
-                <div class="chat_content_message_incoming_container">
+                </hgroup>
+                <hgroup class="chat_content_message_incoming_container">
                     <p class="chat_content_message">
                         Project has been already finished and i have results to show you.
                     </p>
                     <p class="chat_content_message_status">
                         10:15 AM, Today
                     </p>
-                </div>
+                </hgroup>
             </article>
         </section>
         <form class="chat_input_container">
             <input type="text" placeholder="Enter text here..." class="chat_input">
             <i class="fa-solid fa-paper-plane"></i>
         </form>
-
     </main>
-
-
-
 </body>
-
 </html>
