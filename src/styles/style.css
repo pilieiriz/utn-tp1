@@ -22,6 +22,7 @@ body {
     grid-template-columns: auto 1fr;
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 
 .chat-list_container {
@@ -30,7 +31,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-
+    height: 100vh;
+    width: 300px;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
 .chat-list_search {
@@ -40,6 +44,7 @@ body {
     width: 100%;
     font-size: 14px;
     color: var(--tertiary);
+    flex-shrink: 0;
 }
 
 .chat-list_search::placeholder {
@@ -55,9 +60,30 @@ body {
 .chat-list {
     display: flex;
     flex-direction: column;
-
     justify-content: flex-start;
     padding: 10px 0px;
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    max-height: calc(100vh - 120px);
+}
+
+.chat-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat-list::-webkit-scrollbar-track {
+    background: var(--lightGray);
+    border-radius: 3px;
+}
+
+.chat-list::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 3px;
+}
+
+.chat-list::-webkit-scrollbar-thumb:hover {
+    background: var(--tertiary);
 }
 
 .chat-list_content {
@@ -146,6 +172,8 @@ body {
     justify-content: space-between;
     border-bottom: var(--secondary) solid 1px;
     padding: 14px;
+    background-color: var(--primary);
+    flex-shrink: 0;
 }
 
 .chat_header_user {
@@ -203,13 +231,40 @@ body {
 }
 
 
+.chat_container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    flex: 1;
+}
+
 .chat_content {
     display: flex;
     flex-direction: column;
-    height: 84%;
+    flex: 1;
     gap: 10px;
     border-bottom: var(--secondary) solid 1px;
     padding: 10px;
+    overflow-y: auto;
+    min-height: 0;
+}
+
+.chat_content::-webkit-scrollbar {
+    width: 6px;
+}
+
+.chat_content::-webkit-scrollbar-track {
+    background: var(--lightGray);
+    border-radius: 3px;
+}
+
+.chat_content::-webkit-scrollbar-thumb {
+    background: var(--secondary);
+    border-radius: 3px;
+}
+
+.chat_content::-webkit-scrollbar-thumb:hover {
+    background: var(--tertiary);
 }
 
 
@@ -260,6 +315,8 @@ body {
     flex-direction: row;
     gap: 10px;
     align-items: center;
+    background-color: var(--primary);
+    flex-shrink: 0;
 }
 
 .chat_input {
